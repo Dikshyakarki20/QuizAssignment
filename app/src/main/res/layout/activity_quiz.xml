@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity">
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="16dp"
+android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#7e57c2"
+        android:paddingBottom="12dp"
+        android:text="Which of the following correctly describe what an activity is in Android?"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <CheckBox
+        android:id="@+id/event_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="An event handler that responds to system-side broadcast announcements"
+        android:textSize="16sp"
+        android:layout_marginBottom="16sp"
+        android:background="#ce93d8"/>
+    <!-- Answer -->
+    <CheckBox
+        android:id="@+id/component_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A component that defines a user-facing operation that's displayed on a device screen"
+        android:textSize="16sp"
+        android:layout_marginBottom="16sp"
+        android:background="#ce93d8"/>
+    <CheckBox
+        android:id="@+id/message_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A message that describes an action to perform or an event that has occurred"
+        android:textSize="16sp"
+        android:layout_marginBottom="16sp"
+        android:background="#ce93d8"/>
+    <!--Question 2 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#7e57c2"
+        android:paddingBottom="12dp"
+        android:text="Which of the following are lifecycle hook methods provided by Android's activity framework?"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+
+    <RadioGroup
+        android:id="@+id/Radio_butto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp">
+        <!-- Answer -->
+        <RadioButton
+            android:id="@+id/stop_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="onStop()"
+            android:layout_marginBottom="16sp"
+            android:background="#ce93d8"/>
+
+        <RadioButton
+            android:id="@+id/resume_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="onResume()"
+            android:layout_marginBottom="16sp"
+            android:background="#ce93d8"/>
+        <!-- Answer -->
+        <RadioButton
+            android:id="@+id/start_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="onStart()"
+            android:layout_marginBottom="16sp"
+            android:background="#ce93d8"/>
+        <RadioButton
+            android:id="@+id/receive_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="onReceive()"
+            android:layout_marginBottom="16sp"
+            android:background="#ce93d8"/>
+    </RadioGroup>
+<!-- Question 3 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#7e57c2"
+        android:paddingBottom="12dp"
+        android:text="Ignoring the initial xml declaration, what is the outermost xml tag used in the AndroidManifest.xml file?"
+        android:textAppearance="?android:textAppearanceMedium" />
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
+        android:hint="Please enter your answer"
+        android:inputType="text"/>
+
+    <!-- Question 4 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#7e57c2"
+        android:paddingBottom="12dp"
+        android:text="Which two of the following statements capture the main purposes of the Service class?"
+        android:textAppearance="?android:textAppearanceMedium" />
+    <!-- Answer -->
+    <CheckBox
+        android:id="@+id/support_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To support long-running, in the background operations"
+        android:textSize="16sp"
+        android:layout_marginBottom="16sp"
+        android:background="#ce93d8"/>
+    <!-- Answer -->
+    <CheckBox
+        android:id="@+id/remote_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To enable remote (inter-process) operations."
+        android:textSize="16sp"
+        android:layout_marginBottom="16sp"
+        android:background="#ce93d8"/>
+    <CheckBox
+        android:id="@+id/manage_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To manage concurrent access to shared databases."
+        android:textSize="16sp"
+        android:layout_marginBottom="16sp"
+        android:background="#ce93d8"/>
+<!--Question 5 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#7e57c2"
+        android:paddingBottom="12dp"
+        android:text="How would you specify a string called exit_message  whose value is Goodbye within a strings xml file?"
+        android:textAppearance="?android:textAppearanceMedium" />
+    <!-- Answer -->
+    <CheckBox
+        android:id="@+id/exit_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Goodbye"
+        android:textSize="16sp"
+        android:layout_marginBottom="16sp"
+        android:background="#ce93d8"/>
+
+    <CheckBox
+        android:id="@+id/string_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="text_string"
+        android:textSize="16sp"
+        android:layout_marginBottom="16sp"
+        android:background="#ce93d8"/>
+    <CheckBox
+        android:id="@+id/Goodbye_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hello"
+        android:textSize="16sp"
+        android:layout_marginBottom="16sp"
+        android:background="#ce93d8"/>
+
+    <!--Question 6 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#7e57c2"
+        android:paddingBottom="12dp"
+        android:text=" Which of the following statements about the startActivityForResult() method are true ?"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <CheckBox
+        android:id="@+id/asyn_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This method is asynchronous and two-way"
+        android:textSize="16sp"
+        android:layout_marginBottom="16sp"
+        android:background="#ce93d8"/>
+    <!-- Answer -->
+    <CheckBox
+        android:id="@+id/syn_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" This method is synchronous and two-way "
+        android:textSize="16sp"
+        android:layout_marginBottom="16sp"
+        android:background="#ce93d8"/>
+    <CheckBox
+        android:id="@+id/metho_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" This method is asynchronous and one-way "
+        android:textSize="16sp"
+        android:layout_marginBottom="16sp"
+        android:background="#ce93d8"/>
+
+    <!-- Question 7-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#7e57c2"
+        android:paddingBottom="12dp"
+        android:text="The Fragment class is a subclass of the Activity class and replaces Activities on large screen devices such as Tablets."
+        android:textAppearance="?android:textAppearanceMedium" />
+    <EditText
+        android:id="@+id/edit1_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
+        android:hint="Please enter your answer"
+        android:inputType="text"/>
+    <!--Question  8-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#7e57c2"
+        android:paddingBottom="12dp"
+        android:text="In which method do Fragments typically create their user interfaces?"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <CheckBox
+        android:id="@+id/create_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onCreate()"
+        android:textSize="16sp"
+        android:layout_marginBottom="16sp"
+        android:background="#ce93d8"/>
+    <!-- Answer -->
+    <CheckBox
+        android:id="@+id/view_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" onCreateView()"
+        android:textSize="16sp"
+        android:layout_marginBottom="16sp"
+        android:background="#ce93d8"/>
+    <CheckBox
+        android:id="@+id/activity_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onActivityCreated()"
+        android:textSize="16sp"
+        android:layout_marginBottom="16sp"
+        android:background="#ce93d8"/>
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Submit"
+        android:background="#b39ddb"/>
+</LinearLayout>
+
+</ScrollView>
